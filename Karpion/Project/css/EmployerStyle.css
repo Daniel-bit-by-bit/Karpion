@@ -1,17 +1,17 @@
-.profile{
+.profile {
   margin-top: 15.5%;
-  margin-left:10.5%;
+  margin-left: 10.5%;
 }
 
-.tablinks{
-color: black;
+.tablinks {
+  color: black;
 }
 
 /* Style the tab */
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: ##85dcb0;
+  background-color: #85dcb0;
   color: black;
 }
 
@@ -43,29 +43,34 @@ color: black;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
-
 }
 
 /*****PROFILE*****************/
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width:500px;
-  margin:center;
+  max-width: 500px;
+  margin: center;
   text-align: center;
   font-family: arial;
   background-color: #85dcb0;
 }
 .card1 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width:600px;
+  max-width: 600px;
 
   background-color: #85dcb0;
 }
-.name{
-  color: black; font-family: 'Droid serif', serif; font-size: 36px; font-style: italic;
- }
+.name {
+  color: black;
+  font-family: "Droid serif", serif;
+  font-size: 36px;
+  font-style: italic;
+}
 .title {
-  color: #gray; font-family: 'Trocchi', serif; font-size: 23px; padding: 0px;
+  color: gray;
+  font-family: "Trocchi", serif;
+  font-size: 23px;
+  padding: 0px;
 }
 
 button {
@@ -73,7 +78,7 @@ button {
   outline: 0;
   display: inline-block;
   padding: 8px;
-  color:#e8a87c;
+  color: #e8a87c;
   background-color: #000;
   text-align: center;
   cursor: pointer;
@@ -81,7 +86,8 @@ button {
   font-size: 18px;
 }
 .button:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.70), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.7),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 a {
   text-decoration: none;
@@ -89,7 +95,8 @@ a {
   color: black;
 }
 
-button:hover, a:hover {
+button:hover,
+a:hover {
   opacity: 0.7;
 }
 /************************/
@@ -97,9 +104,9 @@ button:hover, a:hover {
 /*body {
 
     background: #85dcb0; */ /* fallback for old browsers */
-  /*  background: -webkit-linear-gradient(to right, #85dcb0, #41b3a3); */ /* Chrome 10-25, Safari 5.1-6 */
-    /*background: linear-gradient(to right, #85dcb0, #41b3a3);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   /*  padding: 0;
+/*  background: -webkit-linear-gradient(to right, #85dcb0, #41b3a3); */ /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #85dcb0, #41b3a3);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*  padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
     color: black;
