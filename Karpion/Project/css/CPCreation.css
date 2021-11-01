@@ -1,0 +1,19 @@
+main h3{
+    margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+main{
+
+    position: relative;
+    top: 150px;
+
+    margin: auto;
+  width: 55%;
+  border: 3px solid rgb(8,93,203);
+  padding: 10px;
+}
