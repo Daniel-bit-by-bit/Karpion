@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--index.html
+    Landing page
+    Links redirect user to either Login page, or Job/Talent posting page
+    Needs the other pages (jobpost, talentpost) in same html folder-->
+<html lang="en">
+    <head>
+        <title>LANDING</title>
+        <meta charset="utf-8">
+        <link rel=stylesheet type="text/css" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav id="globalnav">
+                <!--Logo goes here, brings us back to Landing-->
+                <a href="index.html" id="logo"><img src="../images/logo.png" alt="Karpion Logo"></a>
+                <h1> Karpion </h1>
+            </nav>
+        </header>
+        <main>
+            <nav class="landlognav">
+                <div>
+                    <!--Navigate to the login page-->
+                    <button onclick="window.location.href='login.html';">Login</button>
+                </div><br>
+                <div>
+                    <!--TODO not guaranteed what the next pages specific names are, just insert filename into href for the next 2 buttons-->
+                    <!--this button goes to the Job Posting page-->
+                    <button onclick="window.location.href='../html/jobpost.html';">Look for Jobs</button>
+                    <!--this button goes to the Talent Posting page-->
+                    <button onclick="window.location.href='../html/talentpost.html';">Look for Talent</button>
+                </div>
+            </nav>
+            <!--Last bit of main content reserved for featured profiles-->
+            
+        </main>
+        <footer>
+            <!--Footer for any site info, contact info, whatever else-->
+        </footer>
+        <script src="../js/jquery-3.6.0.js"></script>
+    </body>
+</html>

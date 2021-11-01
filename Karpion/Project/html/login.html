@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--login.html
+    Login page
+    Links for new and returning contractors
+    Links for new and returning employers-->
+<html lang="en">
+  <head>
+    <title>LOGIN</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="globalnav">
+        <!--Logo goes here, brings us back to Landing-->
+        <a href="index.html" id="logo"
+          ><img src="../images/logo.png" alt="Karpion Logo"
+        /></a>
+        <h1>Karpion</h1>
+      </nav>
+    </header>
+    <main>
+      <nav class="landlognav">
+        <!--contractor logins -->
+
+        <div>
+          <button onclick="window.location.href='../html/CPCreation.html';">
+            New Contractor
+          </button>
+          <button onclick="window.location.href='../html/contractorPage.html';">
+            Returning Contractor
+          </button>
+        </div>
+        <br />
+        <!--employer logins-->
+        <div>
+          <button onclick="window.location.href='../html/EPCreation.html';">
+            New Employer
+          </button>
+          <button onclick="window.location.href='../html/EmployerIndex.html';">
+            Returning Employer
+          </button>
+        </div>
+      </nav>
+    </main>
+    <footer></footer>
+    <script src="../js/jquery-3.6.0.js"></script>
+  </body>
+</html>

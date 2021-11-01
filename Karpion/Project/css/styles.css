@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+/*CSS FOR THE BODY OF WEB PAGES*/
+body {
+    display: block;
+    background-color: #e8a87c;
+    margin:0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/*CSS FOR THE HEADER SHARED BY THE WEB PAGES*/
+header {
+    vertical-align: top;
+}
+
+#globalnav {
+    background-color: #85dcb0;
+    height: 10.5%;
+    transition: height ease-in-out 1s;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:900;
+    width:100%;
+}
+
+#globalnav h1 {
+    float: center;
+    height: inherit;
+    text-align: center;
+    font-size: 140%;
+    box-shadow;
+    width:90%;
+    font-size: 200%;
+}
+
+#logo {
+    background-color: #41b3a3;
+    background-position:center;
+    float:left;
+    width:6.5%;
+}
+#logo img {
+    width:4em;
+    margin: .75em;
+}
+
+/*CSS RELATIVE TO LANDING AND LOGIN PAGES*/
+/*the main tag is where the main contents of the page are*/
+.landlognav {
+    position:absolute;
+    top:45%;
+    left:45%;
+    width:90%;
+}
+
+/* #landlognav is just the navigation buttons for Landing and Login pages */
+.landlognav div{
+    max-width: 110px;
+    
+    text-align:center;
+    border: 2px solid black;
+}
+/*END OF LOGIN/LANDING CSS*/

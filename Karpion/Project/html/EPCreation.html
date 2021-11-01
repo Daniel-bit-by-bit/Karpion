@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Employer Profile Creation</title>
+        <meta charset="utf-8">
+        <link rel=stylesheet type="text/css" href="../css/styles.css">
+        <link rel=stylesheet type="text/css" href="../css/EPCreation.css">
+        <script type = "text/javascript" src = "../js/PCreation.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav id="globalnav">
+                <!--Logo goes here, brings us back to Landing-->
+                <a href="index.html" id="logo"><img src="../images/logo.png" alt="Karpion Logo"></a>
+                <h1> Karpion </h1>
+                <a id="menu"><img src="../images/menu-icon.svg"></a>
+                <ul>
+                    <!--The Other Web Pages Go Into This List-->
+                    <li><a href="other.html">Other Page</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+    <h3> Employer Profile Creation </h3>
+    <form action = "" onsubmit="verify()">
+        <p>
+            <label>
+                Username:
+                <br/>
+                <input type = "text" id = "username" />
+                <label id = "Uerror">
+                </label>
+            </label>
+            <br /><br />
+    
+            <label>
+                Password:
+                <br />
+                <input type = "password" id = "password" />
+                <label id = "Perror">
+                </label>
+            </label>
+            <br /><br />
+    
+            <label>
+                Email:
+                <br />
+                <input type = "text" id = "email" />
+                <label id = "Eerror">
+                </label>
+            </label>
+            <br /><br />
+    
+            <input type = "submit" id = "submitButton" />
+        </p>
+
+
+        </main>
+        
+        <footer>
+            
+        </footer>
+        <script src="../js/jquery-3.6.0.js"></script>
+        <!-- Menu and Globalnav-related Scripts /!-->
+        <script>
+            $(document).ready(function() {
+                // Menu Button Toggle
+                $("#menu").click(function(){
+                   $("#globalnav").toggleClass("nav_open"); 
+                });
+
+                //Remove nav_open class on nav-link click
+                $("#globalnav ul li a").click(function() {
+                    $("#globalnav").removeClass("nav_open"); 
+                });
+            });
+        </script>
+
+<script type = "text/javascript" src = "../js/PCreation.js"></script>
+
+    </body>
+</html>
