@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--index.html
+<!--index.php
     Landing page
     Links redirect user to either Login page, or Job/Talent posting page
-    Needs the other pages (jobpost, talentpost) in same html folder-->
+    Showcases a couple contractors randomly queried from the database-->
 <html lang="en">
     <head>
         <title>LANDING</title>
@@ -13,12 +13,12 @@
         <header>
             <nav id="globalnav">
                 <!--Logo goes here, brings us back to Landing-->
-                <a href="index.html" id="logo"><img src="../images/logo.png" alt="Karpion Logo"></a>
+                <a href="index.php" id="logo"><img src="../images/logo.png" alt="Karpion Logo"></a>
                 <h1> Karpion </h1>
             </nav>
         </header>
         <main>
-            <nav class="landlognav">
+            <nav class="landnav">
                 <div>
                     <!--Navigate to the login page-->
                     <button onclick="window.location.href='login.html';">Login</button>
@@ -32,7 +32,20 @@
                 </div>
             </nav>
             <!--Last bit of main content reserved for featured profiles-->
-            
+            <div id="landingshowcase">
+                <?php
+                $h = "localhost";
+                //$u == database name
+                $u = "group3";
+                $p = "5J7pONKvNY2K";
+                $DBConnect = @mysqli_connect($h, $u, $p);
+                @mysqli_select_db($DBConnect, $u);
+                //$q == the mysql query
+                $q = "SELECT name, contact, header, education, skillset FROM CONTRACTOR ORDER BY RAND() LIMIT 3;";
+                $query = @mysqli_query($DBConnect, $q);
+                //TODO put each showcase in a simple box, on one line
+                ?>
+            </div>
         </main>
         <footer>
             <!--Footer for any site info, contact info, whatever else-->
