@@ -48,20 +48,44 @@ header {
     margin: .75em;
 }
 
-/*CSS RELATIVE TO LANDING AND LOGIN PAGES*/
-/*the main tag is where the main contents of the page are*/
-.landlognav {
-    position:absolute;
-    top:45%;
-    left:45%;
-    width:90%;
+/*CSS SPECIFIC TO LANDING*/
+.landnav {
+  position: absolute;
+  top: 11%;
+  left: 33%;
+}
+/* #landnav and lognav is just the navigation buttons for Landing and Login pages */
+.landnav div {
+  max-width: 110px;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid black;
+  margin-right: 4.5em;
+}
+.landnav div button {
+  font-size: 30px;
+  height: 100px;
+  width: 200px;
+  background-color: #85dcb0;
+  padding: 1em;
 }
 
-/* #landlognav is just the navigation buttons for Landing and Login pages */
-.landlognav div{
-    max-width: 110px;
-    
-    text-align:center;
-    border: 2px solid black;
+/*CSS SPECIFIC TO THE LOGIN CONNECTOR PAGE*/
+.lognav {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  width: 90%;
+}
+.lognav div {
+  max-width: 110px;
+  text-align: center;
+  border: 2px solid black;
+}
+.lognav div button {
+  font-size: 30px;
+  height: 100px;
+  width: 200px;
+  background-color: #85dcb0;
 }
 /*END OF LOGIN/LANDING CSS*/
