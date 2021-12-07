@@ -70,6 +70,21 @@ header {
   padding: 1em;
 }
 
+/*CSS FOR FEATURING CONTRACTORS ON LANDING*/
+#landingshowcase {
+  position: absolute;
+  top:30%;
+  left: 35%;
+  background-color: #41b3a3;
+}
+#landingshowcase div {
+  display: inline-block;
+  margin:1em;
+  border: 3px solid black;
+  padding:1em;
+  background-color: #85dcb0;
+}
+
 /*CSS SPECIFIC TO THE LOGIN CONNECTOR PAGE*/
 .lognav {
   position: absolute;
