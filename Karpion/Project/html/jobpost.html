@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Job Posting</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/carousel.css" />
+  </head>
+
+  <body>
+    <!-- Header Code Provided by Akhil -->
+    <header>
+      <nav id="globalnav">
+        <!--Logo goes here, brings us back to Landing-->
+        <a href="index.html" id="logo"
+          ><img src="../images/logo.png" alt="Karpion Logo"
+        /></a>
+        <h1>Karpion</h1>
+        <a id="menu"><img src="../images/menu-icon.svg" /></a>
+        <ul>
+          <!--The Other Web Pages Go Into This List-->
+          <li><a href="other.html">Other Page</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <!-- Menu and Globalnav-related Scripts /!-->
+    <script>
+      $(document).ready(function () {
+        // Menu Button Toggle
+        $("#menu").click(function () {
+          $("#globalnav").toggleClass("nav_open");
+        });
+
+        //Remove nav_open class on nav-link click
+        $("#globalnav ul li a").click(function () {
+          $("#globalnav").removeClass("nav_open");
+        });
+      });
+    </script>
+    <!-- End of header code -->
+    <div class="center">
+      <div class="wrapper">
+        <div class="inner">
+          <div class="card">
+            <a href="../html/EmployerIndex(cview).html"
+              ><img
+                src="https://dcassetcdn.com/design_img/1739082/575976/575976_9493274_1739082_056c0cc4_image.jpg"
+            /></a>
+
+            <div class="content">
+              <h1>WcDonald's</h1>
+              <h3>Marketing Rep</h3>
+              <h3>"Looking for someone with 3 years of experience"</h3>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://ih1.redbubble.net/image.394846412.3262/st,small,507x507-pad,600x600,f8f8f8.u3.jpg"
+            />
+            <div class="content">
+              <h1>Somy</h1>
+              <h3>QA Tester</h3>
+              <h3>"No experience necessary"</h3>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://assets.hongkiat.com/uploads/logo-parodies/levis_elvis.jpg?newedit"
+            />
+            <div class="content">
+              <h1>Elvi's</h1>
+              <h3>Web Developer</h3>
+              <h3>"Needs experience with React"</h3>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.macmillandictionary.com/us/external/slideshow/full/Grey_full.png"
+            />
+            <div class="content">
+              <h1>Lorem Ipsum</h1>
+              <h3>Digital Marketing</h3>
+              <h3>UI/UX, Design</h3>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.macmillandictionary.com/us/external/slideshow/full/Grey_full.png"
+            />
+            <div class="content">
+              <h1>Lorem Ipsum</h1>
+              <h3>Digital Marketing</h3>
+              <h3>UI/UX, Design</h3>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.macmillandictionary.com/us/external/slideshow/full/Grey_full.png"
+            />
+            <div class="content">
+              <h1>Lorem Ipsum</h1>
+              <h3>Digital Marketing</h3>
+              <h3>UI/UX, Design</h3>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.macmillandictionary.com/us/external/slideshow/full/Grey_full.png"
+            />
+            <div class="content">
+              <h1>Lorem Ipsum</h1>
+              <h3>Digital Marketing</h3>
+              <h3>UI/UX, Design</h3>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.macmillandictionary.com/us/external/slideshow/full/Grey_full.png"
+            />
+            <div class="content">
+              <h1>Lorem Ipsum</h1>
+              <h3>Digital Marketing</h3>
+              <h3>UI/UX, Design</h3>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://www.macmillandictionary.com/us/external/slideshow/full/Grey_full.png"
+            />
+            <div class="content">
+              <h1>Lorem Ipsum</h1>
+              <h3>Digital Marketing</h3>
+              <h3>UI/UX, Design</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map">
+        <button class="active first"></button>
+        <button class="second"></button>
+        <button class="third"></button>
+      </div>
+    </div>
+    <!-- It only worked on all browsers if I put it in here for some reason -->
+    <script>
+      const buttonsWrapper = document.querySelector(".map");
+      const slides = document.querySelector(".inner");
+
+      buttonsWrapper.addEventListener("click", (e) => {
+        if (e.target.nodeName === "BUTTON") {
+          Array.from(buttonsWrapper.children).forEach((item) =>
+            item.classList.remove("active")
+          );
+          if (e.target.classList.contains("first")) {
+            slides.style.transform = "translateX(-0%)";
+            e.target.classList.add("active");
+          } else if (e.target.classList.contains("second")) {
+            slides.style.transform = "translateX(-33.33333333333333%)";
+            e.target.classList.add("active");
+          } else if (e.target.classList.contains("third")) {
+            slides.style.transform = "translatex(-66.6666666667%)";
+            e.target.classList.add("active");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

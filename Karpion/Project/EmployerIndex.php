@@ -1,30 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Contractor</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="../css/EmployerStyle.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <script type="text/javascript" src="../js/EmployerScript.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav id="globalnav">
-        <!--Logo goes here, brings us back to Landing-->
-        <a href="index.html" id="logo"
-          ><img src="../images/logo.png" alt="Karpion Logo"
-        /></a>
-    <h1> Karpion </h1>
 
-  <ul>
-  <li><a href="jobpost.html">Job Posts</a></li>
-</ul>
-      </nav>
-    </header>
+
+<?php
+include_once 'Header.php';
+?>
+
     <div class="profile">
       <div class="container">
         <div class="row">
@@ -51,12 +30,7 @@
                     website</a
                   >
                 </div>
-                <p><button>Messages</button></p>
-                <button
-                  onclick="window.location.href='EmployerIndexEdit.html';"
-                >
-                  Edit
-                </button>
+
               </div>
             </div>
           </div>
