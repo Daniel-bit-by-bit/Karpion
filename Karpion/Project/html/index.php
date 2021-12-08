@@ -33,7 +33,6 @@
             </nav>
             <!--Last bit of main content reserved for featured profiles-->
             <div id="landingshowcase">
-                <h1>Featured Profiles</h1>
                 <?php
                 $h = "localhost";
                 //$u == database name
