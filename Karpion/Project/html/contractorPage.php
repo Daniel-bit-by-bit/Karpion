@@ -58,6 +58,8 @@ while($rows=mysqli_fetch_array($result)){
 <div id="login">
 <div id="login-sg">
 <div id="st"><a href="../php/logout.php" id="st-btn">Sign Out</a></div>
+<div id="st"><a href="../html/contractor(eview)page.php" id="st-btn">Edit</a></div>
+<div id="st"><a href="#" id="st-btn">Messages</a></div>
 <div id="st"><a href="../php/deleteac.php" id="st-btn">Delete Account</a></div>
 </div>
 </div>
