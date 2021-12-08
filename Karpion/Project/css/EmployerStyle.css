@@ -1,3 +1,20 @@
+
+/*FOR HEADER*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  float: right;
+}
+li a {
+  display: block;
+  padding: 8px;
+
+}
+/*FOR Profile Card*/
 .profile{
   margin-top: 15.5%;
   margin-left:10.5%;

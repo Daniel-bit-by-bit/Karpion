@@ -33,7 +33,6 @@
             </nav>
             <!--Last bit of main content reserved for featured profiles-->
             <div id="landingshowcase">
-                <h1>Featured Profiles</h1>
                 <?php
                 $h = "localhost";
                 //$u == database name
@@ -47,7 +46,7 @@
                 //TODO check if the output looks right
                 $Row = mysqli_fetch_row($query);
                 do{
-                    echo "<div><h1>{$Row[0]}</h1><h2>{$Row[1]}</h2><h3>{$Row[2]}</h3><p>{$Row[3]}</p><p>{$Row[4]}</p></div>"
+                    echo "<div><h1>{$Row[0]}</h1><h2>{$Row[1]}</h2><h3>{$Row[2]}</h3><p>{$Row[3]}</p><p>{$Row[4]}</p></div>";
                     $Row = mysqli_fetch_row($query);
                 }while($Row);
                 mysqli_close($DBConnect);
